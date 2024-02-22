@@ -245,7 +245,7 @@ def search_to_modify(contact_list: list): # Поиск контактов в ф�
     print()
 
 
-def change_phone_number(file_name): # Интервейс для пользователя при работе с контактами
+def change_phone_number(file_name): # Интерфейс для пользователя при работе с контактами
     contact_list = read_file_to_list(file_name)
     number_to_change = search_to_modify(contact_list)
     contact_list.remove(number_to_change)
