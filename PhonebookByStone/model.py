@@ -41,12 +41,12 @@ def find_contact(search_word: str) -> dict[int, list[str]]:
 
 
 def edit_contact(u_id: int, edited_contact: list[str]) -> str:
-# '''
-# Функция изменения контакта в телефонной книге
-# :param u_id: ID пользователя в нашей телефонной книге
-# :param edited_contact: Измененные данные пользователя
-# :return: Имя измененного пользователя
-# '''
+    '''
+    Функция изменения контакта в телефонной книге
+    :param u_id: ID пользователя в нашей телефонной книге
+    :param edited_contact: Измененные данные пользователя
+    :return: Имя измененного пользователя
+    '''
     global phone_book
     current_contact = phone_book[u_id]
     for i in range(len(current_contact)):
@@ -58,3 +58,5 @@ def edit_contact(u_id: int, edited_contact: list[str]) -> str:
 def delete_contact(u_id: int) -> str:
     global phone_book
     return phone_book.pop(u_id)[0]
+
+# help(edit_contact)
